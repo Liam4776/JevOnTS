@@ -1,4 +1,4 @@
-# JEV Bench: Time-Series Classification and Event-Type Prediction
+# Benchmarking System One Models for Time-Series Decision Making: A Case Study of Jev
 
 This release contains 173 original Python files for JEV experiments, configuration JSON files, EasyTPP sampling manifests, dataset descriptions, and the dataset directory structure. Raw data, historical predictions, archives, caches, and editor settings are excluded. Empty directories are preserved with `.gitkeep`. The original source directory has not been modified.
 
