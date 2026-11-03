@@ -1,0 +1,822 @@
+[
+  {
+    "path": "GunPoint/GunPoint_TEST.txt",
+    "bytes": 362550,
+    "sha256": "e6a95f44019aac3e96a20f2ad67f204b7cff6a6bee036670ce25fa3c84624cbd"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/ArticularyWordRecognition/ArticularyWordRecognition_TEST.arff",
+    "bytes": 3155367,
+    "sha256": "4791f7f3215257e29ccf980e2c8684a962f4e4c5064262421200cd4e8bea334c"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/AtrialFibrillation/AtrialFibrillation_TEST.arff",
+    "bytes": 174997,
+    "sha256": "8b711e7d85ab2c0ea313c503508349ac6eed27ffdadf97fadfe591d643d5bc7c"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/BasicMotions/BasicMotions_TEST.arff",
+    "bytes": 230257,
+    "sha256": "d8505047e7f985ebd7436ddab8687a494873ffdd9aaf78ef91f4374fb09a07a9"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/CharacterTrajectories/CharacterTrajectories_TEST.arff",
+    "bytes": 5238627,
+    "sha256": "14995e141a87cb2e608c6440ee4abab71fa5c66e75c32f235a9d5ec5755dfbf6"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/Cricket/Cricket_TEST.arff",
+    "bytes": 4296059,
+    "sha256": "8096268bf5ad7e94af0f8eed3822b6476b494cd88ad167993ddb9a8ed8d7978a"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/DuckDuckGeese/DuckDuckGeese_TEST.arff",
+    "bytes": 155417554,
+    "sha256": "b8204bd91e3c5d0d3064e80ffb86a043328a4283bac363185182dc8d799e5a97"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/ERing/ERing_TEST.arff",
+    "bytes": 817636,
+    "sha256": "678ce05ddb098b8e430288e6f28bc0c5272d8354328c7ba0c0635c660e83a662"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/EigenWorms/EigenWorms_TEST.arff",
+    "bytes": 133350505,
+    "sha256": "34d71cb509d89e0bd9aae3193d939acc2762bad0a826e2c0330159c9829b6870"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/Epilepsy/Epilepsy_TEST.arff",
+    "bytes": 475278,
+    "sha256": "e622d83c4a5673885e13990fd25ef8aba79f488b31a4bbc1de85bbca4339eb3c"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/EthanolConcentration/EthanolConcentration_TEST.arff",
+    "bytes": 9062049,
+    "sha256": "5e36bc4ea2d99f334ac7c257560cefb1d772dcdba01b1cce09cf21f1e33a86ca"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/FaceDetection/FaceDetection_TEST.arff",
+    "bytes": 295953091,
+    "sha256": "2050b98fcf19e97085653f718efbb12cdaa9035b1a63b2138942c285d7b1e5d2"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/FingerMovements/FingerMovements_TEST.arff",
+    "bytes": 701133,
+    "sha256": "d0d52ef2f16e6d0637c93899d3f2e345c0de51c534027a9a43dc231a4d40d935"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/HandMovementDirection/HandMovementDirection_TEST.arff",
+    "bytes": 3236929,
+    "sha256": "b80e1cde7c49c534ae8f3f01cf33e89c89ecfe3e730f61ca2ed4e18dcf8c565e"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/Handwriting/Handwriting_TEST.arff",
+    "bytes": 3353541,
+    "sha256": "a250991791469c24d6b020dff75820b9a79199167634f117aaa22d36ed44c4d4"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/Heartbeat/Heartbeat_TEST.arff",
+    "bytes": 44409918,
+    "sha256": "b982c75e85d8e078a134e9963aea3a551e267f0d25cbd405ac63c80977bf1a36"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/InsectWingbeat/InsectWingbeat_TEST.arff",
+    "bytes": 472596130,
+    "sha256": "a4493e2c4476381c32d0cce151b7df1a361e22ece00ca74c75c83593b3cb3fcc"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/JapaneseVowels/JapaneseVowels_TEST.arff",
+    "bytes": 782704,
+    "sha256": "96ca0fe8d4fa4fb66c6eead7488b80701398e5a0a90cac2ea1e1a004dd41a26b"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/LSST/LSST_TEST.arff",
+    "bytes": 4026767,
+    "sha256": "deead6e145c82f573efee0f898d3c72c5e887acc5192e83ae50ed8846d4dee66"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/Libras/Libras_TEST.arff",
+    "bytes": 135331,
+    "sha256": "5bad494e52e520b269e00441e03cb35acb0a2dfd18f113cdb1fbb09cd75d0287"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/MotorImagery/MotorImagery_TEST.arff",
+    "bytes": 117314261,
+    "sha256": "a7cbf4cb8de046d5327a9d91bb749a663d64ed80c9e17b249dd86d65aea22b58"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/NATOPS/NATOPS_TEST.arff",
+    "bytes": 2125103,
+    "sha256": "28d4ce7437f8134d971bd6a21ff427b73aef8526ace9a1d8dbcefb97f807553d"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/PEMS-SF/PEMS-SF_TEST.arff",
+    "bytes": 165308683,
+    "sha256": "8756635fb849ccfa1c52caaaf9e2a5326a0ef917341f3f27d5db837bf09cf2e0"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/PenDigits/PenDigits_TEST.arff",
+    "bytes": 182514,
+    "sha256": "50a5a106281d1bd9fb2dd11771907eeeb6d63cd69349b872ecfe9f43d96d56e7"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/PhonemeSpectra/PhonemeSpectra_TEST.arff",
+    "bytes": 68060173,
+    "sha256": "6ee608a278ffbccd6d86f95a3126dc3dbb88e4fae4450d37a5475054251f4d55"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/RacketSports/RacketSports_TEST.arff",
+    "bytes": 264712,
+    "sha256": "3b47d148bdcaa2ebf6148cf7038dd9765ff8661391467f39044aaf9b611ba377"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP1/SelfRegulationSCP1_TEST.arff",
+    "bytes": 9327314,
+    "sha256": "a43eaf28fe2a74c5e5d0e9fdffba8499b17a5663e5ff520582e322a2b0917013"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP2/SelfRegulationSCP2_TEST.arff",
+    "bytes": 8283832,
+    "sha256": "60acfb43f8276fdb1360d9cc7d0a3df4719c3a10a370b2432bd5c6f48666b8ca"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/SpokenArabicDigits/SpokenArabicDigits_TEST.arff",
+    "bytes": 12433383,
+    "sha256": "146ca5f822b7ebdf83f87a914d20b5ddcddc09f19b81e1a49212593d8656168e"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/StandWalkJump/StandWalkJump_TEST.arff",
+    "bytes": 855539,
+    "sha256": "fbfdd315408c550b38f8c6fd33597fdb4ff0cfafad6feb15b0ed8015f264c670"
+  },
+  {
+    "path": "Multivariate2018_arff/Multivariate_arff/UWaveGestureLibrary/UWaveGestureLibrary_TEST.arff",
+    "bytes": 2454138,
+    "sha256": "cc6f6988e46806c90debc76314b8287d8dc7749f897e427aa32924df055bc0bb"
+  },
+  {
+    "path": "Univariate2018_arff/2/BeetleFly/BeetleFly_TEST.arff",
+    "bytes": 127667,
+    "sha256": "2e586e64fc647efa840564059ddc123da77c186c318e825ddbf6182fce6fdcbf"
+  },
+  {
+    "path": "Univariate2018_arff/2/BirdChicken/BirdChicken_TEST.arff",
+    "bytes": 127982,
+    "sha256": "fad3f0ffc2b1d9f4de4daa8bcac677fad772c222b79825bd82ed226d9a70048b"
+  },
+  {
+    "path": "Univariate2018_arff/2/Chinatown/Chinatown_TEST.arff",
+    "bytes": 52227,
+    "sha256": "32a44b70ddb811f760685b35758f12b13e99c7914d8b674f2deca699f422b122"
+  },
+  {
+    "path": "Univariate2018_arff/2/Coffee/Coffee_TEST.arff",
+    "bytes": 96269,
+    "sha256": "3027da694e27660b205988b109cd52dddfe3d87efda3147020de5b61247f377f"
+  },
+  {
+    "path": "Univariate2018_arff/2/Computers/Computers_TEST.arff",
+    "bytes": 2104717,
+    "sha256": "7b83c2757ce3293c66bf9d7698cda39dea9cf55d64dcdf5c88dc7254b200f4bb"
+  },
+  {
+    "path": "Univariate2018_arff/2/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_TEST.arff",
+    "bytes": 247700,
+    "sha256": "0aa341b4e48003031a6cb0e863784a6c315341c2bc62e3151e540570d0d0e1c9"
+  },
+  {
+    "path": "Univariate2018_arff/2/DodgerLoopGame/DodgerLoopGame_TEST.arff",
+    "bytes": 196753,
+    "sha256": "c47a45001202a97a61489e442740889120063ccb538148cdc6a39773ffb44264"
+  },
+  {
+    "path": "Univariate2018_arff/2/DodgerLoopWeekend/DodgerLoopWeekend_TEST.arff",
+    "bytes": 196766,
+    "sha256": "879e4262287e944db647b5621a795d9dd9d60a4793320f381c4c9b52fc54e7ff"
+  },
+  {
+    "path": "Univariate2018_arff/2/ECG200/ECG200_TEST.arff",
+    "bytes": 109517,
+    "sha256": "c3d8cc4fb316b2c3981318b14d9df4dc8e540126f0ac838d3002b24355b28678"
+  },
+  {
+    "path": "Univariate2018_arff/2/ECGFiveDays/ECGFiveDays_TEST.arff",
+    "bytes": 1371840,
+    "sha256": "9b3e8eb0ee8dccd63ee65d318e9de070f1544ad54f9e424455e3feb1c8e46373"
+  },
+  {
+    "path": "Univariate2018_arff/2/Earthquakes/Earthquakes_TEST.arff",
+    "bytes": 834296,
+    "sha256": "5d604c33b3f256a40094a2091c0a7af2af6f8c77179b428a9d8a376e4e5b2c96"
+  },
+  {
+    "path": "Univariate2018_arff/2/FordA/FordA_TEST.arff",
+    "bytes": 7377677,
+    "sha256": "299e09696cee344e41026197faf9fc89a9bb2446d33369f226f9d30d8a821892"
+  },
+  {
+    "path": "Univariate2018_arff/2/FordB/FordB_TEST.arff",
+    "bytes": 4536882,
+    "sha256": "52b6ccc987a196e32b004c8018d9e38e77b70f123bd2d819dbc55ea39c6486b6"
+  },
+  {
+    "path": "Univariate2018_arff/2/FreezerRegularTrain/FreezerRegularTrain_TEST.arff",
+    "bytes": 9353618,
+    "sha256": "d27a031d8b965bd69b0d64b1b05f0aec31c413b9fee242e33ad06a239ac14ce8"
+  },
+  {
+    "path": "Univariate2018_arff/2/FreezerSmallTrain/FreezerSmallTrain_TEST.arff",
+    "bytes": 9353616,
+    "sha256": "469f33a919a4d2329a52c72ae228144e0ad21e0b75c91cdcebb2e32d031dd949"
+  },
+  {
+    "path": "Univariate2018_arff/2/GunPoint/GunPoint_TEST.arff",
+    "bytes": 256013,
+    "sha256": "0e2bb15ea57792a877c418fc950db7039d68c9c6d36c63e39ca5baa6b66ce233"
+  },
+  {
+    "path": "Univariate2018_arff/2/GunPointAgeSpan/GunPointAgeSpan_TEST.arff",
+    "bytes": 474923,
+    "sha256": "d6f1f64cd9068c89807a364121d3879a1d38bda11aa2b7085426bfb2645e0b93"
+  },
+  {
+    "path": "Univariate2018_arff/2/GunPointMaleVersusFemale/GunPointMaleVersusFemale_TEST.arff",
+    "bytes": 474976,
+    "sha256": "66b76560af53c385ba739271c517f4b7bed2b5ec84c7dd354a40f0cf955713fa"
+  },
+  {
+    "path": "Univariate2018_arff/2/GunPointOldVersusYoung/GunPointOldVersusYoung_TEST.arff",
+    "bytes": 473324,
+    "sha256": "38522142a17f828f3db205175d9c4ff13c2ab67fc539be85f64fab85af05bcde"
+  },
+  {
+    "path": "Univariate2018_arff/2/Ham/Ham_TEST.arff",
+    "bytes": 532989,
+    "sha256": "099112896bf64a9999f0301f42453301537031e207e34255706d0aa5fe14483e"
+  },
+  {
+    "path": "Univariate2018_arff/2/HandOutlines/HandOutlines_TEST.arff",
+    "bytes": 11133491,
+    "sha256": "51ae28f70c6fb3214f96ed3b8772501f67022cbfd37b989a5fccc18468381c67"
+  },
+  {
+    "path": "Univariate2018_arff/2/Herring/Herring_TEST.arff",
+    "bytes": 377097,
+    "sha256": "b56cd48b9c9c1fb9ade9a19b32bc05b725767c3ba76a35ef4bca6fea88925d4b"
+  },
+  {
+    "path": "Univariate2018_arff/2/HouseTwenty/HouseTwenty_TEST.arff",
+    "bytes": 1526144,
+    "sha256": "15c91e8d2d3f24fd53b365f69ac9c8736a7ff269b5a7c231144253c0704b0c8f"
+  },
+  {
+    "path": "Univariate2018_arff/2/ItalyPowerDemand/ItalyPowerDemand_TEST.arff",
+    "bytes": 274562,
+    "sha256": "0e38f53ee46288015c7258c2a08ae9730f3fa7a9bcd3789a245556eb795932b4"
+  },
+  {
+    "path": "Univariate2018_arff/2/Lightning2/Lightning2_TEST.arff",
+    "bytes": 469930,
+    "sha256": "93063151e957e2d4f79bdb95e4a8c5fe0ee73ed7a67a7ddca1d90b395e61f074"
+  },
+  {
+    "path": "Univariate2018_arff/2/MiddlePhalanxOutlineCorrect/MiddlePhalanxOutlineCorrect_TEST.arff",
+    "bytes": 261199,
+    "sha256": "17dcf6a68d272a9a9c210fb74e4b2ec698a67c40f849e277b748de17efaede77"
+  },
+  {
+    "path": "Univariate2018_arff/2/MoteStrain/MoteStrain_TEST.arff",
+    "bytes": 1177478,
+    "sha256": "e86e753943afa3a343c38de0aea176d49c195e5eacf894e4b7d465e44a5b2f3d"
+  },
+  {
+    "path": "Univariate2018_arff/2/PhalangesOutlinesCorrect/PhalangesOutlinesCorrect_TEST.arff",
+    "bytes": 760620,
+    "sha256": "802237de39c63474aa8f08da59712f50b5a0df3d806df37f2f613fbf8bc05f2c"
+  },
+  {
+    "path": "Univariate2018_arff/2/PowerCons/PowerCons_TEST.arff",
+    "bytes": 131830,
+    "sha256": "ed11015314de8b40b4ca691e39ec819e378cfc2d45dcf843eff6dc8ed8fb9412"
+  },
+  {
+    "path": "Univariate2018_arff/2/ProximalPhalanxOutlineCorrect/ProximalPhalanxOutlineCorrect_TEST.arff",
+    "bytes": 259514,
+    "sha256": "79c5bb158f8dc31a20adcdedfea0b55f03ccb673b2e157d9217a4a7d174fffa0"
+  },
+  {
+    "path": "Univariate2018_arff/2/SemgHandGenderCh2/SemgHandGenderCh2_TEST.arff",
+    "bytes": 8962220,
+    "sha256": "0a8ba6153121b2ec0313654d3ff915a49ff7c79a784429f08bbe2cfcc545d9cf"
+  },
+  {
+    "path": "Univariate2018_arff/2/ShapeletSim/ShapeletSim_TEST.arff",
+    "bytes": 1006129,
+    "sha256": "8620c83de0d0182b01cc7a8fe1ce2d9ac5e44634196f04aceac9636555679121"
+  },
+  {
+    "path": "Univariate2018_arff/2/SonyAIBORobotSurface1/SonyAIBORobotSurface1_TEST.arff",
+    "bytes": 472776,
+    "sha256": "7927f088f72a5f044f86accbc8e035c747ddbf2ebc565cc4cecf1695917fab01"
+  },
+  {
+    "path": "Univariate2018_arff/2/SonyAIBORobotSurface2/SonyAIBORobotSurface2_TEST.arff",
+    "bytes": 709335,
+    "sha256": "50b69ec21784724d6c28961e67d9316e0f7955db9d38d8ed8313b46732032f60"
+  },
+  {
+    "path": "Univariate2018_arff/2/Strawberry/Strawberry_TEST.arff",
+    "bytes": 1000541,
+    "sha256": "7537600cb8a777c9399a98a80f6a374395983af3b2d161398a6c5802d53b48f6"
+  },
+  {
+    "path": "Univariate2018_arff/2/ToeSegmentation1/ToeSegmentation1_TEST.arff",
+    "bytes": 721483,
+    "sha256": "b752bcb1dfb39be302b332e4e80ff08ebbf73d9fff82b065a806fff496d4a7e7"
+  },
+  {
+    "path": "Univariate2018_arff/2/ToeSegmentation2/ToeSegmentation2_TEST.arff",
+    "bytes": 514846,
+    "sha256": "31781952e283c4306b383506f09f50dc4195baf269ab875f7fec047021b288aa"
+  },
+  {
+    "path": "Univariate2018_arff/2/TwoLeadECG/TwoLeadECG_TEST.arff",
+    "bytes": 1052656,
+    "sha256": "fe0eb4c3966d06ea4ec8f93ff10b058a7097daa59d96df975ecb81fb7d12e1ee"
+  },
+  {
+    "path": "Univariate2018_arff/2/Wafer/Wafer_TEST.arff",
+    "bytes": 10263815,
+    "sha256": "533ef6a365bfcec29793f77585ec016a5eabbf062963405871313ed75e159a76"
+  },
+  {
+    "path": "Univariate2018_arff/2/Wine/Wine_TEST.arff",
+    "bytes": 150486,
+    "sha256": "2a957fdcf9b1b84a1c995e2cde2a428baa7e26206dd83c8c925add71a97c93a6"
+  },
+  {
+    "path": "Univariate2018_arff/2/WormsTwoClass/WormsTwoClass_TEST.arff",
+    "bytes": 795681,
+    "sha256": "0b4601e31db0144cc10bb44eda22a32845dd3d37fbb556e9b47e4fe833703d94"
+  },
+  {
+    "path": "Univariate2018_arff/2/Yoga/Yoga_TEST.arff",
+    "bytes": 14162755,
+    "sha256": "e311d1db7b1b7208f4a5248fb24328875d8fb9dce1e6fac5465514f864e3d505"
+  },
+  {
+    "path": "Univariate2018_arff/n/ACSF1_10/ACSF1_TEST.arff",
+    "bytes": 1698161,
+    "sha256": "731473bdebe0a47b05ef9b64496472fdb8b756bcb56d8681592041b76565e724"
+  },
+  {
+    "path": "Univariate2018_arff/n/Adiac_37/Adiac_TEST.arff",
+    "bytes": 764986,
+    "sha256": "b032afda1ada4fd9a10d9f4ed113b9087c9a3f9a6798648347459d2acfb3e36b"
+  },
+  {
+    "path": "Univariate2018_arff/n/AllGestureWiimoteX_10/AllGestureWiimoteX_TEST.arff",
+    "bytes": 1087094,
+    "sha256": "e121edad04c3bfe771e10c7cf60dfcc0159fd5fefd4b9a94bd50d49be8143263"
+  },
+  {
+    "path": "Univariate2018_arff/n/AllGestureWiimoteY_10/AllGestureWiimoteY_TEST.arff",
+    "bytes": 1087982,
+    "sha256": "fe61d83a1daef42999b788afd5c226106eac50a79c8066ce5148ad071f7f593a"
+  },
+  {
+    "path": "Univariate2018_arff/n/AllGestureWiimoteZ_10/AllGestureWiimoteZ_TEST.arff",
+    "bytes": 1046462,
+    "sha256": "cf8d3b9711a3bd573782d16dd8ee74b0ea5e35ea72025ad7402ade58810f2e74"
+  },
+  {
+    "path": "Univariate2018_arff/n/ArrowHead_3/ArrowHead_TEST.arff",
+    "bytes": 491279,
+    "sha256": "110c457b8b537c6087e0bf98ea13ff21edc9c354aa2d934a9d1b2b93fd344cbb"
+  },
+  {
+    "path": "Univariate2018_arff/n/BME_3/BME_TEST.arff",
+    "bytes": 179739,
+    "sha256": "4c1429fec7ce8307bb76100697cea6e919560e470ffa1c3bb89cd940debdbe07"
+  },
+  {
+    "path": "Univariate2018_arff/n/Beef_5/Beef_TEST.arff",
+    "bytes": 171479,
+    "sha256": "7cd14055a5344ac6394d521e24f9f089a64674c326508b68bba8be61751082f7"
+  },
+  {
+    "path": "Univariate2018_arff/n/CBF_3/CBF_TEST.arff",
+    "bytes": 1287280,
+    "sha256": "02babb0d8b5feedbba60a0d2be751ca86d26f9fc1656eb85e10851a05dac801e"
+  },
+  {
+    "path": "Univariate2018_arff/n/Car_4/Car_TEST.arff",
+    "bytes": 395908,
+    "sha256": "0e3ec8684ec04b6f240254388d5100a28ec4ead3432c8d36cd9af55753492a1e"
+  },
+  {
+    "path": "Univariate2018_arff/n/ChlorineConcentration_3/ChlorineConcentration_TEST.arff",
+    "bytes": 7283512,
+    "sha256": "ad3d0e4c13e4d693229db3d1ab537eaf410749bbd7e8969c3c415191d10bb045"
+  },
+  {
+    "path": "Univariate2018_arff/n/CinCECGTorso_4/CinCECGTorso_TEST.arff",
+    "bytes": 26020544,
+    "sha256": "7692bb20a85fa8f19053013c9b973f97343855fb6245de0ac9ec6c8785fff7d6"
+  },
+  {
+    "path": "Univariate2018_arff/n/CricketX_12/CricketX_TEST.arff",
+    "bytes": 1331687,
+    "sha256": "7f8bd37af357c3284c6e9b1f18d0395eb59842e336de0dc3391bc0cf15e2fdd7"
+  },
+  {
+    "path": "Univariate2018_arff/n/CricketY_12/CricketY_TEST.arff",
+    "bytes": 1318026,
+    "sha256": "1cd9827f56ac7331952bacf15956dfba35e6ea210ccda38185c3cc23dd7c17ec"
+  },
+  {
+    "path": "Univariate2018_arff/n/CricketZ_12/CricketZ_TEST.arff",
+    "bytes": 1329977,
+    "sha256": "c40ebc0fbe72f0db726cb85fc150791a79fda6f287db6112c54ddf440754d139"
+  },
+  {
+    "path": "Univariate2018_arff/n/Crop_24/Crop_TEST.arff",
+    "bytes": 4795711,
+    "sha256": "1f23c681b43d7ed19100221f0920078c1d72be574b2ce21bf1dda127c8f5c330"
+  },
+  {
+    "path": "Univariate2018_arff/n/DiatomSizeReduction_4/DiatomSizeReduction_TEST.arff",
+    "bytes": 1174019,
+    "sha256": "49ec1e8762a832075846b5d3db22638c2704f6aa41665ca83c44660b5ccab552"
+  },
+  {
+    "path": "Univariate2018_arff/n/DistalPhalanxOutlineAgeGroup_3/DistalPhalanxOutlineAgeGroup_TEST.arff",
+    "bytes": 126684,
+    "sha256": "a4e21798e77b446e080e3d99d18b67117bb881140a66638584a9e0d531524d83"
+  },
+  {
+    "path": "Univariate2018_arff/n/DistalPhalanxTW_6/DistalPhalanxTW_TEST.arff",
+    "bytes": 126591,
+    "sha256": "b62e567aa7b83c4d2bc166570dc51e1d0c35eb340714dc262f22d1f52b3faba7"
+  },
+  {
+    "path": "Univariate2018_arff/n/DodgerLoopDay_7/DodgerLoopDay_TEST.arff",
+    "bytes": 118141,
+    "sha256": "786bc73b285e53ebf503d2fe2b2be0a930da11701269cde44be4942aebcd8cf2"
+  },
+  {
+    "path": "Univariate2018_arff/n/ECG5000_5/ECG5000_TEST.arff",
+    "bytes": 7086857,
+    "sha256": "d6084cbb427fbce41d4f7ef7f68f4cadf1cb9964961c67598ef8db1432144fa4"
+  },
+  {
+    "path": "Univariate2018_arff/n/EOGHorizontalSignal_12/EOGHorizontalSignal_TEST.arff",
+    "bytes": 3436352,
+    "sha256": "38dd9e84278c1ee8c89ed5dec2e733f19bcd5302dba688902d3442f4d8542bd5"
+  },
+  {
+    "path": "Univariate2018_arff/n/EOGVerticalSignal_12/EOGVerticalSignal_TEST.arff",
+    "bytes": 3456562,
+    "sha256": "77dee6161c258d5126bb65b4a295c9de0f5d2a9e01c2d4b01769c59ba4744a4c"
+  },
+  {
+    "path": "Univariate2018_arff/n/ElectricDevices_7/ElectricDevices_TEST.arff",
+    "bytes": 8540587,
+    "sha256": "642afe877005f733931ea66ea62ecebd7b01926fdeb41700b51ac926dbe05881"
+  },
+  {
+    "path": "Univariate2018_arff/n/EthanolLevel_4/EthanolLevel_TEST.arff",
+    "bytes": 9893129,
+    "sha256": "a731d7c408e98864aed5ff3c07996270a80b2379fe9118703222411605b99329"
+  },
+  {
+    "path": "Univariate2018_arff/n/FaceAll_14/FaceAll_TEST.arff",
+    "bytes": 2506467,
+    "sha256": "79ffdddfb987d9084b0230221c17e88496a68ac536beab6cbe1dd40e2ee1c624"
+  },
+  {
+    "path": "Univariate2018_arff/n/FaceFour_4/FaceFour_TEST.arff",
+    "bytes": 358532,
+    "sha256": "f4aadb51d0e175cc614ae1c617777c4b8b4356d0258e590590d18a6abef94be9"
+  },
+  {
+    "path": "Univariate2018_arff/n/FacesUCR_14/FacesUCR_TEST.arff",
+    "bytes": 3038376,
+    "sha256": "884f3877dfaacd05d1489b495b694a290e3950750ce9ac9492bd4c3de3ba7951"
+  },
+  {
+    "path": "Univariate2018_arff/n/FiftyWords_50/FiftyWords_TEST.arff",
+    "bytes": 1409747,
+    "sha256": "9f93942e2db889a04b8c9c665761b83c07d41c6b3a51d3a754d00f1c0b838351"
+  },
+  {
+    "path": "Univariate2018_arff/n/Fish_7/Fish_TEST.arff",
+    "bytes": 907580,
+    "sha256": "0e02880bc85a9904c901bf2c6b9c378cc3fe50e80f89dd8051b4df3a3d02f08d"
+  },
+  {
+    "path": "Univariate2018_arff/n/Fungi_18/Fungi_TEST.arff",
+    "bytes": 394132,
+    "sha256": "dcc6f328157300dd7c8bc073799bde8c66d31988540c4a614ca6fd00d7ddbee8"
+  },
+  {
+    "path": "Univariate2018_arff/n/GestureMidAirD1_26/GestureMidAirD1_TEST.arff",
+    "bytes": 247957,
+    "sha256": "7901cd43b1e8f1178d0e498cd1f404dae5bced4721f1f37893591c7950d38c99"
+  },
+  {
+    "path": "Univariate2018_arff/n/GestureMidAirD2_26/GestureMidAirD2_TEST.arff",
+    "bytes": 234928,
+    "sha256": "0271d8cdebf2c90619a8315f79b83cedc14174e6f12161802f31b8022ec1b576"
+  },
+  {
+    "path": "Univariate2018_arff/n/GestureMidAirD3_26/GestureMidAirD3_TEST.arff",
+    "bytes": 249803,
+    "sha256": "2ffdccc8eda26305b34e94ecf3bc124b523badbc608ed4a82a9893993341b6ae"
+  },
+  {
+    "path": "Univariate2018_arff/n/GesturePebbleZ1_6/GesturePebbleZ1_TEST.arff",
+    "bytes": 310884,
+    "sha256": "99b7aadb60cd33e1a39476fecf7d25ac82dfdeab0c642a72c83b09311fb0f4f9"
+  },
+  {
+    "path": "Univariate2018_arff/n/GesturePebbleZ2_6/GesturePebbleZ2_TEST.arff",
+    "bytes": 292656,
+    "sha256": "fb3a42ca31317a6bfddb25f8a6b22b6644b20e8bae8844fcf67ca1b305f9a173"
+  },
+  {
+    "path": "Univariate2018_arff/n/Haptics_5/Haptics_TEST.arff",
+    "bytes": 3786233,
+    "sha256": "28e0ea39571b75fa640ac430a392c9cd94193964c9e398301301ca0a42301a10"
+  },
+  {
+    "path": "Univariate2018_arff/n/InlineSkate_7/InlineSkate_TEST.arff",
+    "bytes": 11773771,
+    "sha256": "3e82fc905bd0daa779b2c97ad9d8bf6bb7ddd8d9251c8d18ba7cdd663c610f08"
+  },
+  {
+    "path": "Univariate2018_arff/n/InsectEPGRegularTrain_3/InsectEPGRegularTrain_TEST.arff",
+    "bytes": 1214683,
+    "sha256": "847de87a4de8d82dd7847f2549bae880b38d60227b91f207e3f487658acd4831"
+  },
+  {
+    "path": "Univariate2018_arff/n/InsectEPGSmallTrain_3/InsectEPGSmallTrain_TEST.arff",
+    "bytes": 1214681,
+    "sha256": "d57090b64863a83b5d8831fd740fce2e61773f3a5c5b3c73ff15febd50c32da8"
+  },
+  {
+    "path": "Univariate2018_arff/n/InsectWingbeatSound_11/InsectWingbeatSound_TEST.arff",
+    "bytes": 5896718,
+    "sha256": "c4536287afbec2f5e97ad55768236d15e2e52718758f0b807fc0c1cdd5adc217"
+  },
+  {
+    "path": "Univariate2018_arff/n/LargeKitchenAppliances_3/LargeKitchenAppliances_TEST.arff",
+    "bytes": 3223827,
+    "sha256": "ad5e243f86dad095e73c5f97eab876de2d37be039e05a68545a120adcca45617"
+  },
+  {
+    "path": "Univariate2018_arff/n/Lightning7_7/Lightning7_TEST.arff",
+    "bytes": 277561,
+    "sha256": "cae372877edd3d1e1a694fbf13deac8c59b08369250e2742bd6bc405efc3d35e"
+  },
+  {
+    "path": "Univariate2018_arff/n/Mallat_8/Mallat_TEST.arff",
+    "bytes": 26678058,
+    "sha256": "367e94385a255e24bfaaa0dfbf2b894738941ec840a7d67869b7c799e876c41c"
+  },
+  {
+    "path": "Univariate2018_arff/n/Meat_3/Meat_TEST.arff",
+    "bytes": 320159,
+    "sha256": "f3ba015a852eecd842069d74c7738b97183a4feef4577d31240bfb753948c8ac"
+  },
+  {
+    "path": "Univariate2018_arff/n/MedicalImages_10/MedicalImages_TEST.arff",
+    "bytes": 870973,
+    "sha256": "8efc6c911842f640fe17c47507a4d43dc0260a932b65d7236fd068a52b2b6099"
+  },
+  {
+    "path": "Univariate2018_arff/n/MelbournePedestrian_10/MelbournePedestrian_TEST.arff",
+    "bytes": 352839,
+    "sha256": "30032e92e9784e9aa0fe64d9e4243a1f1ad2d81df8ed93247c1811083642c905"
+  },
+  {
+    "path": "Univariate2018_arff/n/MiddlePhalanxOutlineAgeGroup_3/MiddlePhalanxOutlineAgeGroup_TEST.arff",
+    "bytes": 140152,
+    "sha256": "d622762c8fe201c0f8fa211857a78a8501811a5fb33ca3a9db937ae2ab2e4ec8"
+  },
+  {
+    "path": "Univariate2018_arff/n/MiddlePhalanxTW_6/MiddlePhalanxTW_TEST.arff",
+    "bytes": 139535,
+    "sha256": "8a169f8002470957b5fc6f893c6ce028a69db21f0ecce2120fe75f85092a3ee2"
+  },
+  {
+    "path": "Univariate2018_arff/n/MixedShapesRegularTrain_5/MixedShapesRegularTrain_TEST.arff",
+    "bytes": 27552475,
+    "sha256": "09271a2403c6c3de8506f1a730c34751ca3d998edd6c714ee28eee800610975c"
+  },
+  {
+    "path": "Univariate2018_arff/n/MixedShapesSmallTrain_5/MixedShapesSmallTrain_TEST.arff",
+    "bytes": 27552473,
+    "sha256": "5f6003957e854d47cd4a6393c4f031968ba64de7496abd7c8bfc7aa70334a8b1"
+  },
+  {
+    "path": "Univariate2018_arff/n/NonInvasiveFetalECGThorax1_42/NonInvasiveFetalECGThorax1_TEST.arff",
+    "bytes": 16810461,
+    "sha256": "57c5d57344b3bd522b821f43f9bdf7086dc458cc03f9c80abe0744d3ae326788"
+  },
+  {
+    "path": "Univariate2018_arff/n/NonInvasiveFetalECGThorax2_42/NonInvasiveFetalECGThorax2_TEST.arff",
+    "bytes": 16816293,
+    "sha256": "33d452bf12cbdc016565a12b75f927c3b7883c1393c441a52445726f746a42be"
+  },
+  {
+    "path": "Univariate2018_arff/n/OSULeaf_6/OSULeaf_TEST.arff",
+    "bytes": 1163731,
+    "sha256": "22049d3f2a7cef9123f934618f808c9e5641460da10a14407d2a7aaaa8045712"
+  },
+  {
+    "path": "Univariate2018_arff/n/OliveOil_4/OliveOil_TEST.arff",
+    "bytes": 211325,
+    "sha256": "3d9bef8ad7429ccc7bac94db9252586a51b069778769a48f43297ae87bb6c837"
+  },
+  {
+    "path": "Univariate2018_arff/n/PLAID_11/PLAID_TEST.arff",
+    "bytes": 2631770,
+    "sha256": "7da150924a8866cd4e40b2ac939bf0f1584f86e33fab570041ae2c0f0fd70c66"
+  },
+  {
+    "path": "Univariate2018_arff/n/Phoneme_39/Phoneme_TEST.arff",
+    "bytes": 21956087,
+    "sha256": "0db4acb5c21a46ecdd523c5debe55ab3f134dcda19ff4f2633215715d8f62096"
+  },
+  {
+    "path": "Univariate2018_arff/n/PickupGestureWiimoteZ_10/PickupGestureWiimoteZ_TEST.arff",
+    "bytes": 75079,
+    "sha256": "d55e3c3ef2b414a9d43ceb86a2414ec09fc279d525dee485aa8a308d1fa92076"
+  },
+  {
+    "path": "Univariate2018_arff/n/PigAirwayPressure_52/PigAirwayPressure_TEST.arff",
+    "bytes": 4038001,
+    "sha256": "f81587337955343d1785141655f1e746961ee8a941c6c9e889e1709cb04da1f7"
+  },
+  {
+    "path": "Univariate2018_arff/n/PigArtPressure_52/PigArtPressure_TEST.arff",
+    "bytes": 4168405,
+    "sha256": "5451eb823f2a89f2e1b2f5ba7289daaea218be603ddd48e25d24b924936520ac"
+  },
+  {
+    "path": "Univariate2018_arff/n/PigCVP_52/PigCVP_TEST.arff",
+    "bytes": 4072121,
+    "sha256": "d7994066612d3a77fad2efb6d5d79dafadc9fdf21f8df271344e9afe837115b3"
+  },
+  {
+    "path": "Univariate2018_arff/n/Plane_7/Plane_TEST.arff",
+    "bytes": 173015,
+    "sha256": "face58d8c1d3cb419d30b5164e3911051506ef474cea6bbe119e5ea9241dd232"
+  },
+  {
+    "path": "Univariate2018_arff/n/ProximalPhalanxOutlineAgeGroup_3/ProximalPhalanxOutlineAgeGroup_TEST.arff",
+    "bytes": 184486,
+    "sha256": "1d273aff34bc76658d5d3b09b9a229b50910c8fd2d2d7c050b3de0e9c9193a72"
+  },
+  {
+    "path": "Univariate2018_arff/n/ProximalPhalanxTW_6/ProximalPhalanxTW_TEST.arff",
+    "bytes": 184915,
+    "sha256": "0e112b6ba5aa663797446561ac90ae5b31c71dabf0d5c5df1293bc061c7eff05"
+  },
+  {
+    "path": "Univariate2018_arff/n/RefrigerationDevices_3/RefrigerationDevices_TEST.arff",
+    "bytes": 3058465,
+    "sha256": "6662ddc2e637dbb162b9e6ee1382df952c14ab6a822aeced7f253fe982c95769"
+  },
+  {
+    "path": "Univariate2018_arff/n/Rock_4/Rock_TEST.arff",
+    "bytes": 1093267,
+    "sha256": "14037c08ddeb4402f1d9707a36cc3c97cafe89c7c5c0c13eec94e09e80a17cc9"
+  },
+  {
+    "path": "Univariate2018_arff/n/ScreenType_3/ScreenType_TEST.arff",
+    "bytes": 3115841,
+    "sha256": "6b8442a7da8e4df76835c8e7a77d4bbdde4382ff70a8e347b14522ed4d1ba571"
+  },
+  {
+    "path": "Univariate2018_arff/n/SemgHandMovementCh2_6/SemgHandMovementCh2_TEST.arff",
+    "bytes": 6731838,
+    "sha256": "c5c5138e789b3d0b2d1192d5f87b24a53573afa19e848841b663e18924c47001"
+  },
+  {
+    "path": "Univariate2018_arff/n/SemgHandSubjectCh2_5/SemgHandSubjectCh2_TEST.arff",
+    "bytes": 6732114,
+    "sha256": "01c96cf1dadb5e331ad92ec57853ac88ba071db87fe2d3cb266ff18a31491a9a"
+  },
+  {
+    "path": "Univariate2018_arff/n/ShakeGestureWiimoteZ_10/ShakeGestureWiimoteZ_TEST.arff",
+    "bytes": 83561,
+    "sha256": "7e051009eb71be0baa91ccd078dc540e33b7919412e3489b558fb06d9152f2a2"
+  },
+  {
+    "path": "Univariate2018_arff/n/ShapesAll_60/ShapesAll_TEST.arff",
+    "bytes": 3416248,
+    "sha256": "08c19338e2c57b4540e5e50d5c656720ee5775f977bc2b20eb2bd08484889a32"
+  },
+  {
+    "path": "Univariate2018_arff/n/SmallKitchenAppliances_3/SmallKitchenAppliances_TEST.arff",
+    "bytes": 3389777,
+    "sha256": "c7e8f4e454ddb784a11ec1133d138eeeedb05b84c5fc4b239cce099991629378"
+  },
+  {
+    "path": "Univariate2018_arff/n/SmoothSubspace_3/SmoothSubspace_TEST.arff",
+    "bytes": 26380,
+    "sha256": "f85de3b6e0f8f499b62660f3b66f03648dce97f18b4d0245d052e4f403f15884"
+  },
+  {
+    "path": "Univariate2018_arff/n/StarLightCurves_3/StarLightCurves_TEST.arff",
+    "bytes": 94119339,
+    "sha256": "e8ab52dd12ce7ea87645dd0cf0e6b370dc5fb8482f3c2c0fe3aa24e852edf0df"
+  },
+  {
+    "path": "Univariate2018_arff/n/SwedishLeaf_15/SwedishLeaf_TEST.arff",
+    "bytes": 891831,
+    "sha256": "daa172ea36d8e0c672c811875280fa77fa74559591d897f2c581405769c3d108"
+  },
+  {
+    "path": "Univariate2018_arff/n/Symbols_6/Symbols_TEST.arff",
+    "bytes": 4391600,
+    "sha256": "e9117393a008a732f6e2fd3cf61e995108c7fff0e4183af9f1e6e533dcc4c9a9"
+  },
+  {
+    "path": "Univariate2018_arff/n/SyntheticControl_6/SyntheticControl_TEST.arff",
+    "bytes": 201585,
+    "sha256": "e1dbfadc6d7923d0fc44e32d317914e6f2aaaf1c3ab748dd0383d7609ec31b0a"
+  },
+  {
+    "path": "Univariate2018_arff/n/Trace_4/Trace_TEST.arff",
+    "bytes": 310085,
+    "sha256": "3dcfdbe7dab95b9e64f4dea7c346c03aa6666e623693e617d12506fc15ab9ca0"
+  },
+  {
+    "path": "Univariate2018_arff/n/TwoPatterns_4/TwoPatterns_TEST.arff",
+    "bytes": 5737680,
+    "sha256": "21314f4128acdcc1d595c24b3d74435170b694c34a33c69d926069084e37010c"
+  },
+  {
+    "path": "Univariate2018_arff/n/UMD_3/UMD_TEST.arff",
+    "bytes": 212956,
+    "sha256": "8a69ce335d1766a4752b8165b1f761f6a32afa67918da2cc3649c72e5a635562"
+  },
+  {
+    "path": "Univariate2018_arff/n/UWaveGestureLibraryAll_8/UWaveGestureLibraryAll_TEST.arff",
+    "bytes": 37359083,
+    "sha256": "9cce8b7b7ee3e8294469ab9d5569af1143e780055bc60dfb48aca1ebbea16ba7"
+  },
+  {
+    "path": "Univariate2018_arff/n/UWaveGestureLibraryX_8/UWaveGestureLibraryX_TEST.arff",
+    "bytes": 12532233,
+    "sha256": "c1acead1986ac04d43014f6dd3fd822a4aff75d75a7eb59cc8d4d8a985790b7d"
+  },
+  {
+    "path": "Univariate2018_arff/n/UWaveGestureLibraryY_8/UWaveGestureLibraryY_TEST.arff",
+    "bytes": 12517490,
+    "sha256": "cf29556fa9632dbb35bfe231512918068d3664191c7ef958cf4a4bc187947b4a"
+  },
+  {
+    "path": "Univariate2018_arff/n/UWaveGestureLibraryZ_8/UWaveGestureLibraryZ_TEST.arff",
+    "bytes": 12532670,
+    "sha256": "0740aefdfcd4c09b4d9552b5081b30dd8dbc7c971c841c9cc8ba3b30222b1af9"
+  },
+  {
+    "path": "Univariate2018_arff/n/WordSynonyms_25/WordSynonyms_TEST.arff",
+    "bytes": 1913634,
+    "sha256": "b9a4435605f229838ce837d7873d321066ba462563df0e85091e027c925c237f"
+  },
+  {
+    "path": "Univariate2018_arff/n/Worms_5/Worms_TEST.arff",
+    "bytes": 795617,
+    "sha256": "cf3cf77fd531afc8a59f67e596745cf05343cee18e62b55fee650ca8e4d5d55f"
+  },
+  {
+    "path": "easyTPP/amazon_test.json",
+    "bytes": 3722567,
+    "sha256": "d584f34d960603a4d5448c5e616eb6770e51f47c4c22704fba18e79772815ea0"
+  },
+  {
+    "path": "easyTPP/retweet_test.json",
+    "bytes": 3929383,
+    "sha256": "3ea0967389716870966d2d32e996d8f5e784a6a5fa0c8b2c259ddfef41780e3a"
+  },
+  {
+    "path": "easyTPP/stockflow_test.json",
+    "bytes": 990014,
+    "sha256": "e531fafc1cc2c109fcfe0a312e43beddda16725ec7c2a98b651609550f9ffb51"
+  },
+  {
+    "path": "easyTPP/taobao_test.json",
+    "bytes": 1274213,
+    "sha256": "1efdd46d7bdf3efd00fb260e4b239ba2278dde03f455f71d30320aed48b3bb84"
+  },
+  {
+    "path": "easyTPP/taxi_test.json",
+    "bytes": 653866,
+    "sha256": "dc1e765b6626c2a231ab026606e29864c082807354066e0307494fb738bcc059"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "dataset": "amazon",
+    "local_file": "amazon_test.json",
+    "revision": "508e882349ce246c12e0cb288b456a11fb741b52",
+    "url": "https://huggingface.co/datasets/easytpp/amazon/resolve/508e882349ce246c12e0cb288b456a11fb741b52/test.json",
+    "download_sha256": "d584f34d960603a4d5448c5e616eb6770e51f47c4c22704fba18e79772815ea0",
+    "matches_original_bytes": true,
+    "matches_original_records": true
+  },
+  {
+    "dataset": "retweet",
+    "local_file": "retweet_test.json",
+    "revision": "d2960029b7c5f6b154c9f1437140d49c3f8c0f0b",
+    "url": "https://huggingface.co/datasets/easytpp/retweet/resolve/d2960029b7c5f6b154c9f1437140d49c3f8c0f0b/test.json",
+    "download_sha256": "3ea0967389716870966d2d32e996d8f5e784a6a5fa0c8b2c259ddfef41780e3a",
+    "matches_original_bytes": true,
+    "matches_original_records": true
+  },
+  {
+    "dataset": "stackoverflow",
+    "local_file": "stockflow_test.json",
+    "revision": "d356ab0d8bc4dd65f5e1f1f2ca9c0759bcfa7344",
+    "url": "https://huggingface.co/datasets/easytpp/stackoverflow/resolve/d356ab0d8bc4dd65f5e1f1f2ca9c0759bcfa7344/test.json",
+    "download_sha256": "e531fafc1cc2c109fcfe0a312e43beddda16725ec7c2a98b651609550f9ffb51",
+    "matches_original_bytes": true,
+    "matches_original_records": true
+  },
+  {
+    "dataset": "taobao",
+    "local_file": "taobao_test.json",
+    "revision": "a96ec6dc7ef311ca45993af9c8a80f78ed08ae47",
+    "url": "https://huggingface.co/datasets/easytpp/taobao/resolve/a96ec6dc7ef311ca45993af9c8a80f78ed08ae47/test.json",
+    "download_sha256": "1efdd46d7bdf3efd00fb260e4b239ba2278dde03f455f71d30320aed48b3bb84",
+    "matches_original_bytes": true,
+    "matches_original_records": true
+  },
+  {
+    "dataset": "taxi",
+    "local_file": "taxi_test.json",
+    "revision": "31af59ee1ae184b5b7abbf0094099b1172d66e2a",
+    "url": "https://huggingface.co/datasets/easytpp/taxi/resolve/31af59ee1ae184b5b7abbf0094099b1172d66e2a/test.json",
+    "download_sha256": "dc1e765b6626c2a231ab026606e29864c082807354066e0307494fb738bcc059",
+    "matches_original_bytes": true,
+    "matches_original_records": true
+  }
+]

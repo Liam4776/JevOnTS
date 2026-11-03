@@ -1,0 +1,2 @@
+# Complete runtime: all benchmark imports are Python standard-library modules.
+python=3.10.16

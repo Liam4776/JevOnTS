@@ -1,0 +1,992 @@
+[
+  {
+    "entry": "easyTPP/test_amazon.py",
+    "suite": "easyTPP",
+    "data": "easyTPP/amazon_test.json",
+    "alternative": false
+  },
+  {
+    "entry": "easyTPP/test_retweet.py",
+    "suite": "easyTPP",
+    "data": "easyTPP/retweet_test.json",
+    "alternative": false
+  },
+  {
+    "entry": "easyTPP/test_stockflow.py",
+    "suite": "easyTPP",
+    "data": "easyTPP/stockflow_test.json",
+    "alternative": false
+  },
+  {
+    "entry": "easyTPP/test_taobao.py",
+    "suite": "easyTPP",
+    "data": "easyTPP/taobao_test.json",
+    "alternative": false
+  },
+  {
+    "entry": "easyTPP/test_taxi.py",
+    "suite": "easyTPP",
+    "data": "easyTPP/taxi_test.json",
+    "alternative": false
+  },
+  {
+    "entry": "GunPoint/test copy.py",
+    "suite": "GunPoint",
+    "data": "GunPoint/GunPoint_TEST.txt",
+    "alternative": true
+  },
+  {
+    "entry": "GunPoint/test.py",
+    "suite": "GunPoint",
+    "data": "GunPoint/GunPoint_TEST.txt",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/ArticularyWordRecognition/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/ArticularyWordRecognition/ArticularyWordRecognition_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/AtrialFibrillation/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/AtrialFibrillation/AtrialFibrillation_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/BasicMotions/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/BasicMotions/BasicMotions_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/CharacterTrajectories/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/CharacterTrajectories/CharacterTrajectories_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/Cricket/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/Cricket/Cricket_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/DuckDuckGeese/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/DuckDuckGeese/DuckDuckGeese_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/EigenWorms/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/EigenWorms/EigenWorms_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/Epilepsy/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/Epilepsy/Epilepsy_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/ERing/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/ERing/ERing_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/EthanolConcentration/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/EthanolConcentration/EthanolConcentration_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/FaceDetection/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/FaceDetection/FaceDetection_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/FingerMovements/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/FingerMovements/FingerMovements_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/HandMovementDirection/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/HandMovementDirection/HandMovementDirection_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/Handwriting/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/Handwriting/Handwriting_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/Heartbeat/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/Heartbeat/Heartbeat_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/InsectWingbeat/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/InsectWingbeat/InsectWingbeat_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/JapaneseVowels/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/JapaneseVowels/JapaneseVowels_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/Libras/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/Libras/Libras_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/LSST/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/LSST/LSST_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/MotorImagery/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/MotorImagery/MotorImagery_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/NATOPS/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/NATOPS/NATOPS_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/PEMS-SF/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/PEMS-SF/PEMS-SF_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/PenDigits/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/PenDigits/PenDigits_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/PhonemeSpectra/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/PhonemeSpectra/PhonemeSpectra_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/RacketSports/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/RacketSports/RacketSports_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP1/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP1/SelfRegulationSCP1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP2/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/SelfRegulationSCP2/SelfRegulationSCP2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/SpokenArabicDigits/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/SpokenArabicDigits/SpokenArabicDigits_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/StandWalkJump/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/StandWalkJump/StandWalkJump_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Multivariate2018_arff/Multivariate_arff/UWaveGestureLibrary/test.py",
+    "suite": "Multivariate2018_arff",
+    "data": "Multivariate2018_arff/Multivariate_arff/UWaveGestureLibrary/UWaveGestureLibrary_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/BeetleFly/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/BeetleFly/BeetleFly_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/BirdChicken/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/BirdChicken/BirdChicken_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Chinatown/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Chinatown/Chinatown_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Coffee/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Coffee/Coffee_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Computers/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Computers/Computers_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/DistalPhalanxOutlineCorrect/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/DistalPhalanxOutlineCorrect/DistalPhalanxOutlineCorrect_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/DodgerLoopGame/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/DodgerLoopGame/DodgerLoopGame_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/DodgerLoopWeekend/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/DodgerLoopWeekend/DodgerLoopWeekend_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Earthquakes/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Earthquakes/Earthquakes_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ECG200/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ECG200/ECG200_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ECGFiveDays/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ECGFiveDays/ECGFiveDays_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/FordA/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/FordA/FordA_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/FordB/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/FordB/FordB_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/FreezerRegularTrain/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/FreezerRegularTrain/FreezerRegularTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/FreezerSmallTrain/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/FreezerSmallTrain/FreezerSmallTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/GunPoint/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/GunPoint/GunPoint_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/GunPointAgeSpan/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/GunPointAgeSpan/GunPointAgeSpan_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/GunPointMaleVersusFemale/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/GunPointMaleVersusFemale/GunPointMaleVersusFemale_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/GunPointOldVersusYoung/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/GunPointOldVersusYoung/GunPointOldVersusYoung_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Ham/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Ham/Ham_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/HandOutlines/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/HandOutlines/HandOutlines_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Herring/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Herring/Herring_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/HouseTwenty/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/HouseTwenty/HouseTwenty_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ItalyPowerDemand/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ItalyPowerDemand/ItalyPowerDemand_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Lightning2/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Lightning2/Lightning2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/MiddlePhalanxOutlineCorrect/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/MiddlePhalanxOutlineCorrect/MiddlePhalanxOutlineCorrect_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/MoteStrain/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/MoteStrain/MoteStrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/PhalangesOutlinesCorrect/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/PhalangesOutlinesCorrect/PhalangesOutlinesCorrect_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/PowerCons/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/PowerCons/PowerCons_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ProximalPhalanxOutlineCorrect/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ProximalPhalanxOutlineCorrect/ProximalPhalanxOutlineCorrect_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/SemgHandGenderCh2/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/SemgHandGenderCh2/SemgHandGenderCh2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ShapeletSim/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ShapeletSim/ShapeletSim_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/SonyAIBORobotSurface1/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/SonyAIBORobotSurface1/SonyAIBORobotSurface1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/SonyAIBORobotSurface2/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/SonyAIBORobotSurface2/SonyAIBORobotSurface2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Strawberry/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Strawberry/Strawberry_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ToeSegmentation1/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ToeSegmentation1/ToeSegmentation1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/ToeSegmentation2/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/ToeSegmentation2/ToeSegmentation2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/TwoLeadECG/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/TwoLeadECG/TwoLeadECG_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Wafer/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Wafer/Wafer_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Wine/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Wine/Wine_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/WormsTwoClass/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/WormsTwoClass/WormsTwoClass_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/2/Yoga/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/2/Yoga/Yoga_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ACSF1_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ACSF1_10/ACSF1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Adiac_37/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Adiac_37/Adiac_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/AllGestureWiimoteX_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/AllGestureWiimoteX_10/AllGestureWiimoteX_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/AllGestureWiimoteY_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/AllGestureWiimoteY_10/AllGestureWiimoteY_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/AllGestureWiimoteZ_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/AllGestureWiimoteZ_10/AllGestureWiimoteZ_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ArrowHead_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ArrowHead_3/ArrowHead_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Beef_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Beef_5/Beef_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/BME_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/BME_3/BME_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Car_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Car_4/Car_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/CBF_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/CBF_3/CBF_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ChlorineConcentration_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ChlorineConcentration_3/ChlorineConcentration_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/CinCECGTorso_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/CinCECGTorso_4/CinCECGTorso_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/CricketX_12/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/CricketX_12/CricketX_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/CricketY_12/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/CricketY_12/CricketY_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/CricketZ_12/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/CricketZ_12/CricketZ_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Crop_24/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Crop_24/Crop_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/DiatomSizeReduction_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/DiatomSizeReduction_4/DiatomSizeReduction_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/DistalPhalanxOutlineAgeGroup_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/DistalPhalanxOutlineAgeGroup_3/DistalPhalanxOutlineAgeGroup_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/DistalPhalanxTW_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/DistalPhalanxTW_6/DistalPhalanxTW_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/DodgerLoopDay_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/DodgerLoopDay_7/DodgerLoopDay_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ECG5000_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ECG5000_5/ECG5000_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ElectricDevices_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ElectricDevices_7/ElectricDevices_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/EOGHorizontalSignal_12/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/EOGHorizontalSignal_12/EOGHorizontalSignal_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/EOGVerticalSignal_12/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/EOGVerticalSignal_12/EOGVerticalSignal_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/EthanolLevel_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/EthanolLevel_4/EthanolLevel_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/FaceAll_14/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/FaceAll_14/FaceAll_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/FaceFour_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/FaceFour_4/FaceFour_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/FacesUCR_14/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/FacesUCR_14/FacesUCR_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/FiftyWords_50/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/FiftyWords_50/FiftyWords_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Fish_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Fish_7/Fish_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Fungi_18/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Fungi_18/Fungi_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/GestureMidAirD1_26/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/GestureMidAirD1_26/GestureMidAirD1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/GestureMidAirD2_26/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/GestureMidAirD2_26/GestureMidAirD2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/GestureMidAirD3_26/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/GestureMidAirD3_26/GestureMidAirD3_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/GesturePebbleZ1_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/GesturePebbleZ1_6/GesturePebbleZ1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/GesturePebbleZ2_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/GesturePebbleZ2_6/GesturePebbleZ2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Haptics_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Haptics_5/Haptics_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/InlineSkate_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/InlineSkate_7/InlineSkate_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/InsectEPGRegularTrain_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/InsectEPGRegularTrain_3/InsectEPGRegularTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/InsectEPGSmallTrain_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/InsectEPGSmallTrain_3/InsectEPGSmallTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/InsectWingbeatSound_11/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/InsectWingbeatSound_11/InsectWingbeatSound_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/LargeKitchenAppliances_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/LargeKitchenAppliances_3/LargeKitchenAppliances_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Lightning7_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Lightning7_7/Lightning7_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Mallat_8/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Mallat_8/Mallat_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Meat_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Meat_3/Meat_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MedicalImages_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MedicalImages_10/MedicalImages_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MelbournePedestrian_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MelbournePedestrian_10/MelbournePedestrian_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MiddlePhalanxOutlineAgeGroup_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MiddlePhalanxOutlineAgeGroup_3/MiddlePhalanxOutlineAgeGroup_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MiddlePhalanxTW_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MiddlePhalanxTW_6/MiddlePhalanxTW_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MixedShapesRegularTrain_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MixedShapesRegularTrain_5/MixedShapesRegularTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/MixedShapesSmallTrain_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/MixedShapesSmallTrain_5/MixedShapesSmallTrain_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/NonInvasiveFetalECGThorax1_42/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/NonInvasiveFetalECGThorax1_42/NonInvasiveFetalECGThorax1_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/NonInvasiveFetalECGThorax2_42/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/NonInvasiveFetalECGThorax2_42/NonInvasiveFetalECGThorax2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/OliveOil_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/OliveOil_4/OliveOil_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/OSULeaf_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/OSULeaf_6/OSULeaf_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Phoneme_39/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Phoneme_39/Phoneme_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/PickupGestureWiimoteZ_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/PickupGestureWiimoteZ_10/PickupGestureWiimoteZ_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/PigAirwayPressure_52/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/PigAirwayPressure_52/PigAirwayPressure_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/PigArtPressure_52/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/PigArtPressure_52/PigArtPressure_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/PigCVP_52/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/PigCVP_52/PigCVP_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/PLAID_11/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/PLAID_11/PLAID_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Plane_7/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Plane_7/Plane_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ProximalPhalanxOutlineAgeGroup_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ProximalPhalanxOutlineAgeGroup_3/ProximalPhalanxOutlineAgeGroup_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ProximalPhalanxTW_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ProximalPhalanxTW_6/ProximalPhalanxTW_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/RefrigerationDevices_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/RefrigerationDevices_3/RefrigerationDevices_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Rock_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Rock_4/Rock_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ScreenType_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ScreenType_3/ScreenType_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SemgHandMovementCh2_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SemgHandMovementCh2_6/SemgHandMovementCh2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SemgHandSubjectCh2_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SemgHandSubjectCh2_5/SemgHandSubjectCh2_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ShakeGestureWiimoteZ_10/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ShakeGestureWiimoteZ_10/ShakeGestureWiimoteZ_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/ShapesAll_60/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/ShapesAll_60/ShapesAll_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SmallKitchenAppliances_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SmallKitchenAppliances_3/SmallKitchenAppliances_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SmoothSubspace_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SmoothSubspace_3/SmoothSubspace_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/StarLightCurves_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/StarLightCurves_3/StarLightCurves_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SwedishLeaf_15/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SwedishLeaf_15/SwedishLeaf_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Symbols_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Symbols_6/Symbols_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/SyntheticControl_6/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/SyntheticControl_6/SyntheticControl_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Trace_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Trace_4/Trace_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/TwoPatterns_4/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/TwoPatterns_4/TwoPatterns_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/UMD_3/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/UMD_3/UMD_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/UWaveGestureLibraryAll_8/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/UWaveGestureLibraryAll_8/UWaveGestureLibraryAll_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/UWaveGestureLibraryX_8/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/UWaveGestureLibraryX_8/UWaveGestureLibraryX_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/UWaveGestureLibraryY_8/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/UWaveGestureLibraryY_8/UWaveGestureLibraryY_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/UWaveGestureLibraryZ_8/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/UWaveGestureLibraryZ_8/UWaveGestureLibraryZ_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/WordSynonyms_25/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/WordSynonyms_25/WordSynonyms_TEST.arff",
+    "alternative": false
+  },
+  {
+    "entry": "Univariate2018_arff/n/Worms_5/test.py",
+    "suite": "Univariate2018_arff",
+    "data": "Univariate2018_arff/n/Worms_5/Worms_TEST.arff",
+    "alternative": false
+  }
+]
