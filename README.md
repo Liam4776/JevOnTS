@@ -1,60 +1,60 @@
-# JEV Bench：时序分类与事件类型预测
+# JEV Bench: Time-Series Classification and Event-Type Prediction
 
-本目录是 `jev_bench/时序分类` 的开源整理版本，保留 173 个与 JEV 实验相关的原始 Python 文件、配置 JSON、EasyTPP 抽样索引、数据集说明和数据目录结构。原始数据、历史预测结果、压缩包、缓存和编辑器配置不随代码发布。空目录用 `.gitkeep` 保留，原目录未修改。
+This release contains 173 original Python files for JEV experiments, configuration JSON files, EasyTPP sampling manifests, dataset descriptions, and the dataset directory structure. Raw data, historical predictions, archives, caches, and editor settings are excluded. Empty directories are preserved with `.gitkeep`. The original source directory has not been modified.
 
-项目调用官方托管的 JEV API 做零样本分类，不包含模型训练或模型权重。本项目的 `easyTPP` 是事件类型预测实验脚本，并非完整的上游 EasyTPP 训练框架。全部运行依赖均为 Python 标准库。
+The project uses the official hosted JEV API for zero-shot classification. It includes neither model training nor model weights. The `easyTPP` directory contains event-type prediction experiments; it does not contain the full upstream EasyTPP training framework. All runtime dependencies are part of the Python standard library.
 
-## 1. 目录与实验范围
+## 1. Directory Structure and Experiment Scope
 
-| 目录 | 默认实验数 | 输入 |
+| Directory | Default experiments | Input |
 | --- | ---: | --- |
-| `easyTPP/` | 5 | Amazon、Retweet、StackOverflow、Taobao、Taxi 测试 JSON |
-| `Multivariate2018_arff/Multivariate_arff/` | 30 | 每个数据集的 `<名称>_TEST.arff` |
-| `Univariate2018_arff/2/`、`Univariate2018_arff/n/` | 共 128 | 每个数据集的 `<名称>_TEST.arff` |
-| `GunPoint/` | 1 | `GunPoint_TEST.txt`，标签在第一列 |
+| `easyTPP/` | 5 | Test JSON files for Amazon, Retweet, StackOverflow, Taobao, and Taxi |
+| `Multivariate2018_arff/Multivariate_arff/` | 30 | `<dataset>_TEST.arff` for each dataset |
+| `Univariate2018_arff/2/` and `Univariate2018_arff/n/` | 128 total | `<dataset>_TEST.arff` for each dataset |
+| `GunPoint/` | 1 | `GunPoint_TEST.txt`, with the label in the first column |
 
-另外保留 1 个 JEV 备份入口：GunPoint 的 `test copy.py`，默认不参加批量运行。所有入口与所需输入见 `benchmark_inventory.json`；所需的 164 个唯一数据文件及原始 SHA-256 见 `data_manifest.json`。`release_manifest.json` 记录原目录中复制及排除的文件。
+One additional JEV backup entry point, `GunPoint/test copy.py`, is retained but excluded from default batch runs. All entry points and their required inputs are listed in `benchmark_inventory.json`. The 164 unique required data files and their original SHA-256 checksums are listed in `data_manifest.json`. `release_manifest.json` records retained and excluded source files, including subsequent removals.
 
-下述命令均从本目录（包含此 README 的 `code`）运行。代码依据脚本位置定位数据，不依赖作者电脑的盘符或工作目录。
+Run all commands below from this directory: the `code` directory containing this README. Experiment scripts locate inputs relative to their own locations, independently of the author's drive letters or working directory.
 
-## 2. 安装完整 Conda 环境
+## 2. Install the Complete Conda Environment
 
-推荐安装方式：
+Recommended installation:
 
 ```sh
 conda env create -f environment.yml
 conda activate jev-bench
 ```
 
-也可使用可直接交给 Conda 的依赖列表：
+Alternatively, use the Conda package specification directly:
 
 ```sh
 conda create -n jev-bench --file conda-spec.txt -y
 conda activate jev-bench
 ```
 
-如已存在环境，可直接安装完整运行依赖：
+To install the complete runtime into an existing environment:
 
 ```sh
 conda install -n jev-bench --file conda-spec.txt -y
 ```
 
-Python 固定为已验证的 `3.10.16`，无需执行 pip 安装。Conda 会自动解析 Python 的底层依赖；这些底层包未跨平台锁定。整理时在 Windows 上通过 Conda dry-run 解析；其他平台尚未实测。
+Python is pinned to the validated version, `3.10.16`. No pip installation is required. Conda resolves Python's underlying dependencies automatically; those packages are not locked across platforms. Dependency resolution was checked with a Conda dry run on Windows. Other platforms have not been tested.
 
-## 3. 准备数据
+## 3. Prepare the Data
 
-### EasyTPP：固定版本自动下载
+### EasyTPP: Download Pinned Versions Automatically
 
-官方来源是 [EasyTPP 项目](https://github.com/ant-research/EasyTemporalPointProcess) 发布的 [Hugging Face easytpp 数据集](https://huggingface.co/easytpp)。本项目五个 JSON 已与官方对应版本逐字节核对，一致。下载脚本只使用标准库，并验证 SHA-256：
+The official source is the [Hugging Face easytpp organization](https://huggingface.co/easytpp), published by the [EasyTPP project](https://github.com/ant-research/EasyTemporalPointProcess). All five local JSON files were compared with the corresponding official revisions and matched byte for byte. The downloader uses only the standard library and verifies SHA-256 checksums:
 
 ```sh
 python tools/download_easytpp.py
 python tools/prepare_data.py --verify --suite easyTPP
 ```
 
-每个数据仓库的固定 commit、下载地址和校验值均记录在 `easytpp_sources.json`。StackOverflow 的本地文件名保留原项目拼写 `stockflow_test.json`，请勿改成 `stackoverflow_test.json`。
+Pinned commits, download URLs, and checksums are recorded in `easytpp_sources.json`. The local StackOverflow filename retains the original project's spelling, `stockflow_test.json`. Do not rename it to `stackoverflow_test.json`.
 
-| 官方仓库 | 本地位置 | 序列数 | 类型数 |
+| Official repository | Local path | Sequences | Event types |
 | --- | --- | ---: | ---: |
 | `easytpp/amazon` | `easyTPP/amazon_test.json` | 1851 | 16 |
 | `easytpp/retweet` | `easyTPP/retweet_test.json` | 2000 | 3 |
@@ -62,16 +62,16 @@ python tools/prepare_data.py --verify --suite easyTPP
 | `easytpp/taobao` | `easyTPP/taobao_test.json` | 500 | 17 |
 | `easytpp/taxi` | `easyTPP/taxi_test.json` | 400 | 10 |
 
-JSON 顶层为数组，每条记录包含 `dim_process`、`seq_idx`、`seq_len`、`type_event`、`time_since_start` 和 `time_since_last_event`。保持原始记录顺序，随机抽样依赖该顺序。
+Each JSON file is a top-level array. Each record contains `dim_process`, `seq_idx`, `seq_len`, `type_event`, `time_since_start`, and `time_since_last_event`. Preserve the original record order: seeded sampling depends on it.
 
-### UCR/UEA 与 GunPoint
+### UCR/UEA and GunPoint
 
-从 [时间序列分类官方数据站](https://www.timeseriesclassification.com/) 下载 2018 版 ARFF 数据：
+Download the 2018 ARFF archives from the [official time-series classification data website](https://www.timeseriesclassification.com/):
 
 - [Univariate2018_arff.zip](https://www.timeseriesclassification.com/aeon-toolkit/Archives/Univariate2018_arff.zip)
 - [Multivariate2018_arff.zip](https://www.timeseriesclassification.com/aeon-toolkit/Archives/Multivariate2018_arff.zip)
 
-解压至仓库外的数据暂存目录。将下面命令中的 `../downloaded-data` 替换为自己的解压目录；工具先按相对路径查找，再按文件名和 SHA-256 查找，因此可接受官方压缩包解压后的布局，并自动放入本项目的 `2/`、`n/` 和带类别数后缀的目录：
+Extract the archives into a staging directory outside this repository. Replace `../downloaded-data` below with your extraction directory. The preparation tool first searches by relative path, then by filename and SHA-256. It can therefore map files from the official archive layout into this project's `2/`, `n/`, and class-count-suffixed directories:
 
 ```sh
 python tools/prepare_data.py --source ../downloaded-data --suite Univariate2018_arff
@@ -79,13 +79,13 @@ python tools/prepare_data.py --source ../downloaded-data --suite Multivariate201
 python tools/prepare_data.py --source ../downloaded-data --suite GunPoint
 ```
 
-如果已经拥有原始 `时序分类` 数据目录，也可一次恢复所有必要测试文件：
+If you already have the original data tree, restore all required test inputs at once. Replace `../original-data` with that directory:
 
 ```sh
-python tools/prepare_data.py --source ../时序分类
+python tools/prepare_data.py --source ../original-data
 ```
 
-恢复工具只复制本次运行所需的测试输入，不复制训练集、密钥或历史结果；不会覆盖内容不同的已有文件。可手动放置数据，准确目标路径见 `data_manifest.json`。例：
+The tool copies only required test inputs. It does not copy training sets, credentials, or historical outputs, and it refuses to overwrite existing files with different contents. You can also place files manually; exact target paths are listed in `data_manifest.json`. Examples:
 
 ```text
 GunPoint/GunPoint_TEST.txt
@@ -94,50 +94,50 @@ Univariate2018_arff/n/ArrowHead_3/ArrowHead_TEST.arff
 Multivariate2018_arff/Multivariate_arff/BasicMotions/BasicMotions_TEST.arff
 ```
 
-完成后检查所有数据：
+Check all inputs after preparation:
 
 ```sh
 python tools/prepare_data.py --verify
 python tools/run_benchmarks.py --check-data
 ```
 
-校验不一致时应核对数据版本、换行和文件内容，不要直接删除校验约束。这里只需要 TEST 文件，模型调用不使用 TRAIN。原始数据及其描述的使用条款由各自提供方规定，本项目 MIT 许可适用于项目代码。
+If a checksum differs, check the dataset version, line endings, and file contents before proceeding. Only TEST files are required; model calls do not use TRAIN files. Dataset contents and descriptions remain subject to their providers' terms. The project's MIT license applies to project code.
 
-## 4. 配置 JEV 官方服务
+## 4. Configure the Official JEV Service
 
-通过 [TypeSafe 官方控制台](https://console.typesafe.ai/) 获取可用 API key，并确认账户可以访问原实验指定的模型 `jev-1.13.0`。实际请求遵循 [官方 API 文档](https://api.typesafe.ai/redoc)：`POST https://api.typesafe.ai/v1/systemone`，使用 `Authorization: Bearer <API_KEY>`。代码已包含 HTTP 调用逻辑，无需额外 SDK 或本地模型部署。
+Obtain an API key through the [official TypeSafe console](https://console.typesafe.ai/) and confirm that your account can access the original experiment's pinned model, `jev-1.13.0`. Requests follow the [official API documentation](https://api.typesafe.ai/redoc): `POST https://api.typesafe.ai/v1/systemone`, authenticated with `Authorization: Bearer <API_KEY>`. HTTP calls are already implemented; no additional SDK or local model deployment is required.
 
-推荐用环境变量传入凭据。PowerShell：
+Environment variables are the recommended way to provide credentials. In PowerShell:
 
 ```powershell
 $env:JEV_API_KEY = "YOUR API KEY"
 ```
 
-Linux/macOS shell：
+In a Linux/macOS shell:
 
 ```sh
 export JEV_API_KEY="YOUR API KEY"
 ```
 
-运行前将占位符替换为自己的真实 key。占位符会在本地被拒绝。环境变量优先于 JSON；也可填写相应配置：
+Replace the placeholder with your real key before running experiments. Placeholder keys are rejected locally. Environment variables take precedence over JSON settings. Alternatively, fill in the relevant configuration file:
 
 - `easyTPP/api.json`
 - `Multivariate2018_arff/Multivariate_arff/api_key.json`
 - `Univariate2018_arff/api_key.json`
 
-所有模板内容为 `{"api_key": "YOUR API KEY"}`。GunPoint 原始脚本和 EasyTPP 通用模块也支持 `JEV_API_KEY`。多变量 runner 额外支持 `JEV_FALLBACK_API_KEY`，仅在原有 token 限制回退逻辑中使用。发布仓库应保持占位符配置，用环境变量运行实验。
+Each template contains `{"api_key": "YOUR API KEY"}`. The GunPoint scripts and the EasyTPP common module also support `JEV_API_KEY`. The multivariate runner additionally supports `JEV_FALLBACK_API_KEY` within its existing token-limit fallback logic. Keep placeholder configurations in the published repository and use environment variables for experiments.
 
-`API_ENDPOINT`、`MODEL` 和各脚本原有批大小保留原实验设置。若官方账户不再支持固定模型，须先核对服务端可用模型；修改 `MODEL` 后的运行属于不同模型版本的实验，不能视为原结果的严格复现。
+`API_ENDPOINT`, `MODEL`, and script-specific batch sizes retain the original experiment settings. If the official service no longer supports the pinned model for your account, check available models before changing `MODEL`. A run using a different model version is a separate experiment and does not strictly reproduce the original results.
 
-## 5. 完整复现流程
+## 5. Reproduce the Experiments
 
-先进行无需数据、无需密钥、禁止网络请求的发布检查：
+First run the offline release checks. They require neither data nor credentials and block network requests:
 
 ```sh
 python tools/verify_release.py
 ```
 
-准备完数据和凭据后，可列出全部默认实验入口，再统一执行：
+After preparing data and credentials, list the default experiments, check their inputs, and run them:
 
 ```sh
 python tools/run_benchmarks.py --list
@@ -145,9 +145,9 @@ python tools/run_benchmarks.py --check-data
 python tools/run_benchmarks.py
 ```
 
-批量工具按顺序执行 164 个默认入口，保留每个脚本原有默认参数，退出码记录到 `benchmark_runs.json`。单项失败后继续其他项目，最终有失败时返回非零退出码。实际运行会调用官方远程服务并消耗账户额度；耗时取决于序列数、长度、服务限额及重试情况。
+The batch runner executes 164 default entry points sequentially, preserving each script's defaults. Exit codes are saved in `benchmark_runs.json`. It continues after individual failures and returns a nonzero exit code if any experiment fails. Actual experiments call the remote official service and consume account quota. Runtime depends on sequence counts, sequence lengths, service limits, and retries.
 
-也可按套件或数据集运行：
+You can also run individual suites or select a dataset by matching its entry-point path:
 
 ```sh
 python tools/run_benchmarks.py --suite easyTPP
@@ -157,9 +157,9 @@ python tools/run_benchmarks.py --suite GunPoint
 python tools/run_benchmarks.py --suite Univariate2018_arff --match BeetleFly
 ```
 
-### EasyTPP 参数与预检查
+### EasyTPP Parameters and Preflight Checks
 
-每个测试集默认使用 `seed=42` 抽取 100 条序列，每批最多来自 10 条不同序列。每条序列从第二个事件开始，使用真实历史事件及已知目标时间预测目标事件类型。因此本实验评估的是给定目标时间的事件类型预测，并未评估未知下一事件时间的预测。
+By default, each test set is sampled with `seed=42` to select 100 sequences. Each batch contains targets from at most 10 distinct sequences. Starting at the second event of each sequence, the model predicts the target event's type using its true event history and known target time. This evaluates event-type prediction conditioned on the target time; it does not evaluate prediction of an unknown next-event time.
 
 ```sh
 python easyTPP/test_amazon.py --num-sequences 100 --batch-size 10 --seed 42 --dry-run
@@ -170,11 +170,13 @@ python easyTPP/test_taobao.py --num-sequences 100 --batch-size 10 --seed 42
 python easyTPP/test_taxi.py --num-sequences 100 --batch-size 10 --seed 42
 ```
 
-`--dry-run` 验证抽样、分批和历史构造，不调用 API。所有脚本支持 `--output-dir`，建议复现实验指定一个新目录，避免覆盖已有输出及抽样索引。已保留的 `*_selected_sequences.json` 只有抽样种子、索引和长度，不含事件原始观测；它们是原实验抽样参考。默认每次根据固定种子重新生成抽样，不直接读取参考索引。
+`--dry-run` checks sampling, batching, and history construction without calling the API. All five EasyTPP test scripts support `--output-dir`. Use a new output directory for each reproduction run to avoid overwriting existing outputs or reference sampling manifests.
 
-原实验参考的目标数分别为 Amazon 4580、Retweet 10383、StackOverflow 6864、Taobao 5636、Taxi 3598。参数、数据和顺序相同时应得到相同抽样索引。
+The retained `*_selected_sequences.json` files contain sampling parameters, sequence indices, and lengths, without raw event observations. They serve as references for the original selections. Each run regenerates its selection using the seed rather than reading a reference manifest directly.
 
-### 单变量、多变量与 GunPoint 单项入口
+Reference target counts are Amazon 4580, Retweet 10383, StackOverflow 6864, Taobao 5636, and Taxi 3598. Identical parameters, input contents, and record order should reproduce the same sequence selection.
+
+### Individual Univariate, Multivariate, and GunPoint Entry Points
 
 ```sh
 python Univariate2018_arff/2/BeetleFly/test.py
@@ -183,17 +185,17 @@ python Multivariate2018_arff/Multivariate_arff/BasicMotions/test.py
 python GunPoint/test.py
 ```
 
-这些脚本默认读取整个 TEST 集，使用各自源码中的 `BATCH_SIZE`、提示词和类别定义。它们不支持统一的 `--dry-run` 参数；可先用批量工具的 `--check-data` 检查输入是否齐全。
+These scripts read the entire TEST set by default and use the `BATCH_SIZE`, prompts, and class definitions in their source files. They do not share a `--dry-run` option. Use the batch runner's `--check-data` option first to check input availability.
 
-## 6. 输出与评估
+## 6. Outputs and Evaluation
 
-预测与指标写入各数据集下原有 `jev_*_output` 目录；EasyTPP 写入 `jev_*_sampled_output`。输入标签用于本地计算指标，脚本的观测输入不包含目标标签。原始提示词、类别语义、重试与 token 限制拆分逻辑均保留。
+Predictions and metrics are written into the existing `jev_*_output` directory for each dataset. EasyTPP uses `jev_*_sampled_output`. Ground-truth labels are used to compute metrics locally; target labels are excluded from the model's observation inputs. Original prompts, class semantics, retries, and token-limit batch splitting are preserved.
 
-- 单变量/多变量：`*_TEST_jev_predictions.csv`、`*_TEST_acc_auc.txt`。
-- EasyTPP：`*_next_event_predictions.csv`、`*_next_event_metrics.txt`、抽样索引 JSON。指标包含 ACC、事件类型错误率、macro one-vs-rest AUC、Macro F1、逐序列平均 ACC 等。
-- GunPoint 主脚本保留其原有输出命名与终端指标格式。
+- Univariate/multivariate: `*_TEST_jev_predictions.csv` and `*_TEST_acc_auc.txt`.
+- EasyTPP: `*_next_event_predictions.csv`, `*_next_event_metrics.txt`, and sampling JSON manifests. Metrics include ACC, event-type error rate, macro one-vs-rest AUC, Macro F1, and mean per-sequence ACC.
+- The main GunPoint script retains its original output filenames and terminal metric format.
 
-结果汇总：
+Summarize results:
 
 ```sh
 python easyTPP/summarize_acc_auc.py
@@ -201,36 +203,36 @@ python Multivariate2018_arff/summarize_acc_auc.py
 python Univariate2018_arff/2/summarize_acc_auc.py
 ```
 
-通用单变量汇总器也可用于 `n/`：
+The generic univariate summarizer can also process `n/`:
 
 ```sh
 python Univariate2018_arff/2/summarize_acc_auc.py --root Univariate2018_arff/n
 ```
 
-AUC 使用原脚本的秩统计实现，二分类的正类与多分类的类别定义由各脚本配置决定。缺少某类别时的处理保留原实现：部分多分类脚本返回 `N/A`，多变量 runner 对有定义的类别 AUC 取平均，因此应同时查看具体脚本与类别覆盖情况。
+AUC uses the original scripts' rank-based implementations. Binary positive classes and multiclass label definitions are specified in each script's configuration. Missing-class behavior is also preserved: some multiclass scripts return `N/A`, while the multivariate runner averages over classes with defined AUC values. Review the relevant implementation and class coverage when interpreting results.
 
-## 7. 辅助转换与 JEV 备份入口
+## 7. Conversion Utility and JEV Backup Entry Point
 
-单变量 ARFF 转 CSV 工具已修复表头写入问题，可指定目录：
+The univariate ARFF-to-CSV utility includes a fix for CSV header generation and accepts explicit input and output directories:
 
 ```sh
 python Univariate2018_arff/arff2csv.py --input-dir Univariate2018_arff/n/ArrowHead_3 --output-dir ../ArrowHead_csv
 ```
 
-默认分类脚本读取 ARFF，不需要先转 CSV。
+Default classification scripts read ARFF directly; CSV conversion is optional.
 
-`GunPoint/test copy.py` 是原项目保留的 JEV 备份实验脚本，默认不参加批量运行。可手动运行该脚本，或使用批量工具的 `--include-alternatives` 将其包含在运行清单中。
+`GunPoint/test copy.py` is a retained JEV backup experiment script. It is excluded from default batch runs. Run it manually, quoting the filename containing a space, or pass `--include-alternatives` to the batch runner to include it.
 
-## 8. 验证范围与复现边界
+## 8. Validation Scope and Reproducibility Limits
 
-整理时已验证保留的 173 个原始模块可离线导入，165 个实验入口能读取原始测试输入（ARFF/TXT 抽取前两行，EasyTPP 读取完整结构），并核对五份 EasyTPP 官方测试数据与原文件逐字节一致。详见 `VALIDATION.md`。
+The 173 retained original modules were validated by offline import. All 165 retained experiment entry points passed input-reading checks: ARFF/TXT readers used the original headers and first two samples, while EasyTPP readers processed complete test JSON structures. All five official EasyTPP test files matched the original local files byte for byte. See [VALIDATION.md](VALIDATION.md) for details.
 
-未使用原作者密钥执行在线推理，未重新计算完整数据集的远程模型指标。代码和数据准备已验证，但官方服务可用性、账户权限、模型版本以及在线返回结果需要在实际账户上运行确认。远程模型即使固定名称，也可能受服务端更新影响，不能保证数值与历史运行完全一致；请保存运行日期、数据校验值、模型实际返回版本、批大小、种子及新生成输出。
+No real API keys were used to execute online inference, and full-dataset remote model metrics were not recomputed. Code and data preparation have been checked; service availability, account permissions, model access, and actual responses still require verification with a live account. A pinned remote model name may still be affected by service-side changes, so numerical results cannot be guaranteed to match historical runs exactly. Record the run date, data checksums, actual returned model version, batch sizes, seed, and generated outputs.
 
-## 9. 许可证与来源
+## 9. License and Sources
 
-项目代码使用 [MIT License](LICENSE)，版权署名 WANG。数据、原数据集描述以及外部服务保留各自许可与使用条款。
+Project code is released under the [MIT License](LICENSE), with copyright attributed to WANG. Data, original dataset descriptions, and external services retain their respective licenses and terms.
 
-- [TypeSafe 官方 API 文档](https://api.typesafe.ai/redoc)
-- [EasyTPP 官方代码](https://github.com/ant-research/EasyTemporalPointProcess) 与 [数据格式文档](https://ant-research.github.io/EasyTemporalPointProcess/user_guide/dataset.html)
-- [UCR/UEA 官方数据站](https://www.timeseriesclassification.com/)
+- [Official TypeSafe API documentation](https://api.typesafe.ai/redoc)
+- [Official EasyTPP repository](https://github.com/ant-research/EasyTemporalPointProcess) and [dataset format documentation](https://ant-research.github.io/EasyTemporalPointProcess/user_guide/dataset.html)
+- [Official UCR/UEA dataset website](https://www.timeseriesclassification.com/)

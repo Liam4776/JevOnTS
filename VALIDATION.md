@@ -1,46 +1,47 @@
-# 发布整理验证记录
+# Release Validation Record
 
-验证日期：2026-11-03（Asia/Shanghai）。运行平台：Windows，Python 3.10.16，Conda 25.5.0。
+Validation date: 2026-11-03 (Asia/Shanghai). Platform: Windows, Python 3.10.16, Conda 25.5.0.
 
-## 已通过
+## Passed Checks
 
-| 检查 | 结果 |
+| Check | Result |
 | --- | --- |
-| 保留的原始 Python 文件 | 173 个 JEV 相关文件；按要求移除 3 个其他模型实验脚本 |
-| 发布 Python 语法与模块导入 | 177 个文件语法通过；173 个保留的原始模块离线导入通过 |
-| 数据读取入口 | 165 个：ARFF/TXT 使用原始表头与前两条样本；EasyTPP 使用完整测试 JSON |
-| 官方 EasyTPP 数据一致性 | 5 个固定 commit 的 test.json 与本地原文件逐字节一致 |
-| EasyTPP dry-run | 5 个实验全部通过；seed=42、100 条序列、batch-size=10 的抽样索引与原参考 JSON 一致 |
-| EasyTPP 目标事件数 | Amazon 4580；Retweet 10383；StackOverflow 6864；Taobao 5636；Taxi 3598 |
-| Conda 安装计划 | `conda create --dry-run --name jev-bench-release-check --file conda-spec.txt --json` 返回 success=true |
-| 原始代码密钥清理 | API key JSON 和源码凭据使用 `YOUR API KEY`；长 `apikey_` / `sk-` 模式扫描无发现 |
-| 本机绝对路径 | Python 字符串常量未发现 Windows 盘符绝对路径；数据定位使用脚本位置 |
-| 占位符保护 | EasyTPP、通用模块、BeetleFly、单变量和多变量配置读取器拒绝占位符 |
-| ARFF 转 CSV | 合成两行 ARFF 的列名、数据列和两行数据均正确 |
-| 批量运行预检查 | 默认发现 164 项；无数据的发布目录准确报告 164 个缺失输入，返回码 2 |
-| 数据恢复工具 | 临时目录中的文件查找、恢复、SHA-256 验证及拒绝覆盖不同内容均通过 |
-| EasyTPP 下载工具 | 用已核对的官方原文件模拟下载响应，五个文件的命名映射与校验均通过；官方真实文件已在单独核对中读取 |
-| 发布目录无数据 | 不包含 ARFF、TS、TSV、CSV、ZIP、数据库、字节码、原始 test JSON、TRAIN/TEST TXT |
+| Retained original Python files | 173 JEV-related files; 3 experiments using another model were removed as requested |
+| Python syntax and module imports | All 177 release Python files parsed successfully; all 173 retained original modules imported offline |
+| Data-reading entry points | 165 passed: ARFF/TXT readers used original headers and the first two samples; EasyTPP readers used complete test JSON files |
+| Official EasyTPP data consistency | All 5 pinned revisions of `test.json` matched the original local files byte for byte |
+| EasyTPP dry runs | All 5 passed; sampled sequence indices matched the original reference manifests with seed 42, 100 sequences, and batch size 10 |
+| EasyTPP target counts | Amazon 4580; Retweet 10383; StackOverflow 6864; Taobao 5636; Taxi 3598 |
+| Conda installation plan | `conda create --dry-run --name jev-bench-release-check --file conda-spec.txt --json` returned `success=true` |
+| Credential removal | API-key JSON files and source credentials use `YOUR API KEY`; no long `apikey_` or `sk-` credential patterns were found |
+| Machine-specific absolute paths | No Windows drive-letter absolute paths were found in Python string constants; inputs are located relative to script locations |
+| Placeholder protection | Credential readers for EasyTPP, its common module, BeetleFly, univariate experiments, and multivariate experiments rejected placeholder keys |
+| ARFF-to-CSV conversion | Column names and both data rows were correct for a synthetic two-row ARFF fixture |
+| Batch preflight | Discovered 164 default experiments; the data-free release correctly reported 164 missing inputs and returned exit code 2 |
+| Data restoration tool | File discovery, restoration, SHA-256 verification, and refusal to overwrite different contents passed in temporary directories |
+| EasyTPP downloader | All 5 filename mappings and checksums passed using verified official files as simulated download responses; the actual official files were read separately during consistency verification |
+| Data-free release contents | No ARFF, TS, TSV, CSV, ZIP, database, bytecode, raw test JSON, or TRAIN/TEST TXT files were packaged |
+| Markdown documentation language | All 45 Markdown files were checked; the project README and validation record were translated into English, and the existing dataset descriptions were already in English |
 
-检查与临时数据仅在独立临时目录中运行；发布目录保留空数据目录和抽样索引，不包含测试中使用的观测数据。
+Temporary data checks ran in separate temporary directories. The release retains empty data directories and sampling manifests, without the observations used during validation.
 
-## 修改范围
+## Changes Made
 
-- 移除 3 个非 JEV 模型实验脚本及其空输出目录，同步更新实验入口清单、汇总示例和 README。
+- Removed 3 non-JEV model experiment scripts and their empty output directories; updated the entry-point inventory, summary examples, and README.
+- Preserved the retained scripts' directory layout, prompts, class definitions, model version, and original batch sizes.
+- Replaced hardcoded credentials with placeholders and added environment-variable support.
+- Replaced the ARFF conversion utility's machine-specific data paths with paths based on its script location and added directory arguments.
+- Fixed the ARFF converter's attempt to write the CSV header before lazily reading the ARFF header.
+- Deferred BeetleFly credential loading until `main`, allowing module imports without real credentials.
+- Added environment specifications, the MIT license, reproduction instructions, data checksums, batch entry points, and data preparation tools.
+- Provided English Markdown documentation throughout the release.
 
-- 保持原脚本目录、提示词、类别定义、模型版本和原有批大小。
-- 所有原始硬编码凭据替换为占位符；新增环境变量读取支持。
-- 原有代码中唯一的本机绝对数据路径位于 ARFF 转换工具，已改为基于脚本位置的路径，并增加目录参数。
-- 修复 ARFF 转换器在懒加载表头前写入 CSV 表头的问题。
-- BeetleFly 的密钥读取延后至 main，模块导入不再要求配置真实凭据。
-- 新增环境文件、MIT 许可证、复现说明、数据校验清单、批量入口与数据准备工具。
+## Not Yet Validated
 
-## 尚未验证
+- No online inference was performed with original or newly supplied real API keys. Full-dataset remote model metrics were not rerun.
+- ARFF/TXT input-reading checks covered the first two samples for each entry point, rather than every data row.
+- Conda dependency resolution was checked without creating a new environment. Offline code checks used the same Python version already installed on the machine.
+- Linux and macOS execution has not been tested.
+- The official UCR/UEA archives were not downloaded in full again for comparison. Their manifest checksums identify the author's existing original files. All five official EasyTPP JSON files were compared in full.
 
-- 没有使用原始或新的真实 API key 发起在线模型推理，没有重跑全量远程模型指标。
-- ARFF/TXT 的数据读取检查覆盖每个入口的前两条样本，没有遍历所有数据行。
-- Conda 进行了安装计划解析，未创建新的环境；离线代码验证使用本机已安装的同版本 Python。
-- Linux/macOS 环境未实测。
-- 官方 UCR/UEA 压缩包未重新完整下载并对照；本次数据清单固定的是作者现有原文件的 SHA-256。EasyTPP 官方五份 JSON 已完整核对。
-
-发布方或使用者可在准备数据与账户后，按 README 执行完整在线复现，并保存独立输出。当前验证不能保证服务端可用性或远程模型指标逐次完全相同。
+After preparing data and account access, follow the README to run a complete online reproduction and save separate outputs. The current checks do not guarantee service availability or identical remote model metrics across runs.
