@@ -1,0 +1,27 @@
+This dataset is from a 2018 Kaggle competition.
+The Photometric LSST Astronomical Time Series Classification
+Challenge (PLAsTiCC) is an open data challenge to classify
+simulated astronomical time-series data in preparation for
+observations from the Large Synoptic Survey Telescope (LSST), which
+will achieve first light in 2019 and commence its 10-year main
+survey in 2022. LSST will revolutionize our understanding of the
+changing sky, discovering and measuring millions of time-varying
+objects.
+
+PLAsTiCCis a large data challenge for which participants are asked
+to classify astronomical time series data. These simulated time
+series, or ‘light curves’ are measurements of an object’s
+brightness as a function of time - by measuring the photon flux in
+six different astronomical filters (commonly referred to as
+passbands). These passbands includeultra-violet, optical and
+infrared regions of the light spectrum. There are many different
+types of astronomical objects (that are driven by different
+physical processes) that we sep-arate into astronomical classes.
+
+
+This arff represents a snap shot of the data available and is
+created from the train set published in the aforemention
+competition.
+
+36 dimension was chosen as it represents a value at which most
+instances would not be truncated.

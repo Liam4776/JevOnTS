@@ -1,0 +1,4 @@
+Data extracted from the Carnegie Mellon University Motion Capture Database by Mustafa Baydogan to classify motion as either a kick or a punch.
+
+
+

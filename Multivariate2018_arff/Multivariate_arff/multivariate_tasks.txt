@@ -1,0 +1,32 @@
+Generated Jev multivariate scripts use only <Task>_TEST.arff, batch size 5. Ground-truth labels are used locally for ACC/AUC and are not sent in API sample inputs.
+ArticularyWordRecognition: EMA sensors track tongue, lip, and jaw motion during speech; choose among 25 spoken-word classes, using numeric word IDs.
+AtrialFibrillation: Two-channel ECG recordings of atrial fibrillation: n means no termination for at least one hour; s means self-termination at least one minute after recording; t means termination within one second.
+BasicMotions: Six smartwatch channels: three accelerometer and three gyroscope axes. Classes are Standing, Running, Walking, and Badminton.
+CharacterTrajectories: Three-dimensional pen-tip velocity traces for 20 character classes; numeric labels 1-20 are character IDs.
+Cricket: Multichannel hand motion sequences for 12 cricket umpire signals; classes use numeric IDs.
+DuckDuckGeese: Audio spectrogram sequences for Black-bellied Whistling Duck, Canadian Goose, Greylag Goose, Pink-footed Goose, and White-faced Whistling Duck.
+EigenWorms: Six eigenworm coefficient traces describe C. elegans movement. Distinguish wild-type worms from four mutant types; labels are IDs 1-5.
+Epilepsy: Three-axis wrist accelerometer recordings for EPILEPSY, WALKING, RUNNING, and SAWING activities.
+ERing: Four electric-field channels from a prototype finger ring; six labels represent finger postures involving the thumb, index, and middle fingers.
+EthanolConcentration: Raw spectra from whisky bottles; E35, E38, E40, and E45 represent ethanol concentrations of 35%, 38%, 40%, and 45%.
+FaceDetection: MEG brain recordings for Face Detection: class 1 is Face and class 0 is Scramble.
+FingerMovements: Twenty-eight EEG channels recorded during finger movement trials; choose left or right movement.
+HandMovementDirection: Ten MEG channels recorded during joystick movement in one of four directions: right, forward, left, or backward.
+Handwriting: Three-dimensional pen trajectories for 26 handwriting classes; labels 1-26 are class IDs.
+Heartbeat: Multichannel heartbeat recordings grouped into normal recordings from healthy subjects and abnormal recordings from patients with cardiac diagnoses.
+InsectWingbeat: Audio spectrogram sequences for 10 insect groups, including male and female mosquitoes and flies; labels identify group and sex.
+JapaneseVowels: Twelve-dimensional spectral trajectories from utterances of Japanese vowels a and e; the label identifies one of nine speakers.
+Libras: Two-dimensional hand movement trajectories grouped into 15 gesture classes with numeric IDs.
+LSST: Six-channel astronomical light curves; choose among 14 astronomical object classes identified by numeric IDs.
+MotorImagery: Sixty-four EEG channels from a brain-computer interface task; classes are finger or tongue motor imagery.
+NATOPS: Motion sequences for six naval aircraft handling gestures. IDs 1-6 mean I have command, All clear, Not clear, Spread wings, Fold wings, and Lock wings.
+PEMS-SF: Traffic occupancy from 963 San Francisco freeway sensors sampled every 10 minutes for 144 time steps. Labels 1-7 correspond to Monday-Sunday.
+PenDigits: Two-dimensional pen coordinates sampled at eight points from a handwritten digit; choose digit 0-9.
+PhonemeSpectra: Eleven spectral channels for phonetic time series; labels are 39 phoneme symbols.
+RacketSports: Six inertial channels from racket-sport strokes: Badminton Smash, Badminton Clear, Squash Forehand Boast, or Squash Backhand Boast.
+SelfRegulationSCP1: Six EEG channels from a self-regulation experiment; classes are negativity and positivity.
+SelfRegulationSCP2: Seven EEG channels from a self-regulation experiment; classes are negativity and positivity.
+SpokenArabicDigits: Thirteen cepstral-feature channels from spoken Arabic digits; the ten labels identify the spoken digit categories.
+StandWalkJump: Four-channel motion recordings for standing, walking, and jumping activity classes.
+UWaveGestureLibrary: Three-axis accelerometer trajectories for eight simple gestures; labels 1-8 are gesture IDs.
+Images skipped: no ARFF test file.
